@@ -2,15 +2,17 @@
 # -*- coding: utf-8 -*-
 
 
-def print_hello(name):
-    if isinstance(name, str):
-        name1 = name
-        print('Hello ' + name1)
+def print_hello(n):
+    if isinstance(n, str):
+        print('Hello, ' + name)
     else:
-        print('Hello ' + str(name))
-    print(name1)
+        print('Hello, ' + str(n))
+
 
 
 if __name__ == '__main__':
-    name = 1234
+    name = input('type your name please: ')
+    name = name.capitalize()
+    print_hello(name)
+    name = name.upper()
     print_hello(name)
