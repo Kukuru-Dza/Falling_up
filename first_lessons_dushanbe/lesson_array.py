@@ -10,4 +10,4 @@ def find_number(a, b):
 
 if __name__ == '__main__':
     number_to_find = int(input('Enter a number: '))
-    print(find_number([0, 2, 3, 5], number_to_find))
+    print(find_number([0, 2, 3, 5, 7], number_to_find))
