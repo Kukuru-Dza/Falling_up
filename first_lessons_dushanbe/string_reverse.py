@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-#def reversing(p):
-
 
 
 if __name__ == '__main__':
