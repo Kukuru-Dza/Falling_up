@@ -2,8 +2,9 @@
 # -*- coding: utf-8 -*-
 
 def find_number(a, b):
-    if a.count(b) > 0:
-        return 1
+    #if a.count(b) > 0:
+    if a.index(b):
+        return a.index(b)
     else:
         return -1
 
