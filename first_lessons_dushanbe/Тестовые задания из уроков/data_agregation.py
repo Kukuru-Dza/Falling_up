@@ -1,15 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-def normalize_url(a):
-    if a[:8] == 'https://':
-        print(a)
-    elif a[:7] == 'http://':
-        print('https://'+a[7:])
-    else:
-        print('https://'+a)
+def join_numbers_from_range(a, b):
+    string = ''
+    while a <= b:
+        string = string+str(a)
+        a = a+1
+    return string
 
 
 if __name__ == '__main__':
-
-join_numbers_from_range()
+    print(join_numbers_from_range(3, 15))
