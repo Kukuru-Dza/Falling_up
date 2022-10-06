@@ -5,7 +5,7 @@ def normalize_url(a):
     if a[:8] == 'https://':
         print(a)
     elif a[:7] == 'http://':
-        print('https://'+a[7:-1])
+        print('https://'+a[7:])
     else:
         print('https://'+a)
 
