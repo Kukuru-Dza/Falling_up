@@ -2,6 +2,10 @@
 # -*- coding: utf-8 -*-
 
 def find_number(a, b):
+    if b == None:
+        return 'failed'
+    if a == None:
+        return 'failed'
     if a.count(b) > 0:
         # if a.index(b) >= 0:
         return a.index(b)
