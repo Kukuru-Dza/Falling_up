@@ -3,7 +3,7 @@
 
 def find_number(a, b):
     if a is None or b is None:
-        return 'failed'
+        return -1
 
     if a.count(b) > 0:
         # if a.index(b) >= 0:
