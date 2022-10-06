@@ -5,6 +5,7 @@ def print_numbers(a):
     while a > 0:
         print(a)
         a -= 1
+    print('Finished!')
 
 
 if __name__ == '__main__':
