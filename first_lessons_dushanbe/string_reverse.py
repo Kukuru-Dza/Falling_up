@@ -10,6 +10,6 @@ def reverse(a):
         remaining_operation = remaining_operation + 1
     return reversed_string
 
-if __name__ == '__main__':
+
     string_to_reverse = input(str('Enter a string to be reversed: '))
     print(reverse(string_to_reverse))
