@@ -3,7 +3,7 @@
 
 def find_number(a, b):
     if a.count(b) > 0:
-    # if a.index(b) >= 0:
+        # if a.index(b) >= 0:
         return a.index(b)
     else:
         return -1
