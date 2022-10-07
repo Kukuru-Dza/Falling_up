@@ -6,7 +6,6 @@ def find_number(a, b):
         return -1
 
     if a.count(b) > 0:
-        # if a.index(b) >= 0:
         return a.index(b)
     else:
         return -1
