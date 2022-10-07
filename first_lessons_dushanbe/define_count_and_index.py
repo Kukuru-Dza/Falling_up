@@ -18,8 +18,13 @@ def fn_index(a, b):
         return False
     x = 0
     count = 0
-    while x < len(a):
-        return x if b == a[x] else x += 1
+    while x < len(a) and count == 0:
+        if b == a[x]:
+            count += 1
+            return x
+        else:
+            x += 1
+    return False
 
 
 if __name__ == '__main__':
