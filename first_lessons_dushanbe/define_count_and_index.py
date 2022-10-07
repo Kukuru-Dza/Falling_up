@@ -18,6 +18,7 @@ def fn_index(a, b):
         return False
     x = 0
     count = 0
+    # return x if b == a[x] else x += 1 - не работает
     while x < len(a) and count == 0:
         if b == a[x]:
             count += 1
