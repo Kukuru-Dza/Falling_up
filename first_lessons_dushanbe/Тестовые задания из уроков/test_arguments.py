@@ -5,7 +5,7 @@ def is_contains_char(a, b):
     if a is None or b is None:
         return False
     count = 0
-    while count < len(a) or x == 1:
+    while count < len(a):
         if b == a[count] or b == a[count].upper() or b == a[count].lower():
             return True
         count += 1
