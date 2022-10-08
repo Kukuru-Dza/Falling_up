@@ -5,7 +5,7 @@ def is_contains_char(a, b):
     count = 0
     x = 0
     while count < len(a) or x == 1:
-        if b == a[count] or b == a[count].upper or b == a[count].lower:
+        if b == a[count] or b == a[count].upper() or b == a[count].lower():
             x += 1
         count += 1
 
@@ -16,4 +16,7 @@ def is_contains_char(a, b):
 
 
 if __name__ == '__main__':
-    print(is_contains_char('The Tallest tree in the world', 'e'))
+    a = ('The Tallest tree in the world')
+    print(is_contains_char(a, 'E'))
+
+
