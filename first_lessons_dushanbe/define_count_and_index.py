@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 
 def fn_count(a, b):
-    #if a is None or b is None:
-    #    return 0
+    if a is None:
+        return 0
     x = 0
     count = 0
     while x < len(a):
@@ -14,8 +14,8 @@ def fn_count(a, b):
 
 
 def fn_index(a, b):
-    #if a is None or b is None:
-    #    return False
+    if a is None:
+        return False
     x = 0
     while x < len(a):
         if b == a[x]:

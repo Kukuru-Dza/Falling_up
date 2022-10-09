@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-def filter_string (a, b):
+def filter_string(a, b):
     output_string = ''
     if a[0] == ' ':
         a = a[1:]
