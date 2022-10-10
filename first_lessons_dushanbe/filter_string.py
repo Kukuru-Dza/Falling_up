@@ -1,16 +1,23 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-def filter_string(a, b):
+def space_trim(a):
     if a is None:
         return a
-    output_string = ''
     while a[0] == ' ':
         a = a[1:]
     while a[-1] == ' ':
         a = a[:-1]
+    return a
+
+
+def filter_string(a, b):
+    if a is None:
+        return a
+    a = space_trim(a)
     if b is None:
         return a
+    output_string = ''
     b = b.lower()
     for item in a:
         if b != item.lower():
