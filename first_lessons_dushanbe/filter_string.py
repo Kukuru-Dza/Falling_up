@@ -3,7 +3,7 @@
 
 def filter_string(a, b):
     if a is None:
-        return False
+        return a
     output_string = ''
     while a[0] == ' ':
         a = a[1:]
@@ -11,11 +11,16 @@ def filter_string(a, b):
         a = a[:-1]
     if b is None:
         return a
-    count = 0
-    for _ in a:
-        if b.lower() != a[count].lower():
-            output_string += a[count]
-        count += 1
+    b = b.lower()
+    for item in a:
+        if b != item.lower():
+            output_string += item
+    # эквивалентно
+    # inx = 0
+    # for _ in a:
+    #     if b != a[inx].lower():
+    #         output_string += a[inx]
+    #     inx += 1
     return output_string
 
 
