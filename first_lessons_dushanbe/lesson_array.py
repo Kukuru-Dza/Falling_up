@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+from define_count_and_index import fn_index
+
+
 def find_number(a, b):
     if a is None or b is None:
         return -1
 
-    if a.count(b) > 0:
-        return a.index(b)
+    if fn_index(a, b):
+        return fn_index(a, b)
     else:
         return -1
 
