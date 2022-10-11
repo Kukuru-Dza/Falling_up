@@ -14,6 +14,6 @@ class ArrayTest(TestCase):
 
     def test_list_none(self):
         a = None
-        expected = False
+        expected = a
         got = list_sort(a)
         self.assertEqual(got, expected, f'function should return index ({expected}) but got {got}')

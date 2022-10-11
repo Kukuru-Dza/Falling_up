@@ -3,7 +3,7 @@
 
 def list_sort(a):
     if a is None:
-        return False
+        return a
     lst = []
     ln = len(a)
     while len(lst) < ln:
@@ -17,6 +17,6 @@ def list_sort(a):
 
 
 if __name__ == '__main__':
-    arr = None
-    #arr = [-4, 6, 3, 7, 22, 1, 1, 1, -1]
+    #arr = None
+    arr = [-4, 6, 3, 7, 22, 1, 1, 1, -1]
     print(list_sort(arr))
