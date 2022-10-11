@@ -17,6 +17,7 @@ def list_sort(a):
 
 
 if __name__ == '__main__':
-    #arr = None
+    arr = None
+    print(list_sort(arr))
     arr = [-4, 6, 3, 7, 22, 1, 1, 1, -1]
     print(list_sort(arr))
