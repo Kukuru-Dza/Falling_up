@@ -37,7 +37,7 @@ class LessonArrayTest(TestCase):
     def test_index_item_not_found(self):
         a = [0, 2, 3, 5, 7]
         b = 77
-        expected = False
+        expected = -1
         got = fn_index(a, b)
         self.assertEqual(got, expected, 'function should return -1 if not found')
 
@@ -51,14 +51,14 @@ class LessonArrayTest(TestCase):
     def test_index_a_is_none(self):
         a = None
         b = 3
-        expected = False
+        expected = -1
         got = fn_index(a, b)
         self.assertEqual(got, expected, 'function should return 0 if not found')
 
     def test_index_b_is_none(self):
         a = [0, 2, 3, 5, 7]
-        b = None
-        expected = False
+        b = -1
+        expected = -1
         got = fn_index(a, b)
         self.assertEqual(got, expected, 'function should return 0 if not found')
 

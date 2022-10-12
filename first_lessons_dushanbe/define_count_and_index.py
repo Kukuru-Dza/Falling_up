@@ -15,13 +15,13 @@ def fn_count(a, b):
 
 def fn_index(a, b):
     if a is None:
-        return False
+        return -1
     x = 0
     while x < len(a):
         if b == a[x]:
             return x
         x += 1
-    return False
+    return -1
 
 
 if __name__ == '__main__':

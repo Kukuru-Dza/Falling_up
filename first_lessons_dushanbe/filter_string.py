@@ -1,21 +1,33 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-def filter_string(a, b):
+def space_trim(a):
     if a is None:
-        return False
-    output_string = ''
+        return a
     while a[0] == ' ':
         a = a[1:]
     while a[-1] == ' ':
         a = a[:-1]
+    return a
+
+
+def filter_string(a, b):
+    if a is None:
+        return a
+    a = space_trim(a)
     if b is None:
         return a
-    count = 0
-    for _ in a:
-        if b.lower() != a[count].lower():
-            output_string += a[count]
-        count += 1
+    output_string = ''
+    b = b.lower()
+    for item in a:
+        if b != item.lower():
+            output_string += item
+    # эквивалентно
+    # inx = 0
+    # for _ in a:
+    #     if b != a[inx].lower():
+    #         output_string += a[inx]
+    #     inx += 1
     return output_string
 
 
