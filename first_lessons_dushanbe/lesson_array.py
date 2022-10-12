@@ -8,8 +8,9 @@ def find_number(a, b):
     if a is None or b is None:
         return -1
 
-    if fn_index(a, b):
-        return fn_index(a, b)
+    x = fn_index(a, b)
+    if x >= 0:
+        return x
     else:
         return -1
 
