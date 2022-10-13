@@ -10,7 +10,7 @@ def list_sort(a):
         ln = 0
         for ln in range(count):
             if a[ln] > a[ln+1]:
-                (a[ln+1], a[ln]) = (a[ln], a[ln+1])
+                a[ln+1], a[ln] = a[ln], a[ln+1]
         count -= 1
     return a
 
