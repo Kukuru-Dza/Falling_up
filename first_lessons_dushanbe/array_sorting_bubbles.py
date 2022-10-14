@@ -15,5 +15,5 @@ def list_sort(a):
     return a
 
 if __name__ == '__main__':
-    arr = [32, 6, 6, 36, 1, 5, -7, 9, 3, -1, 33]
+    arr = [32, 6, 6, 36, 1, 5, -7, 33, 3, -1, 31]
     print(list_sort(arr))
