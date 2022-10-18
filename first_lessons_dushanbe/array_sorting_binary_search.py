@@ -25,17 +25,18 @@ def bin_index(s_a, i):
     elif i == s_a[-1]:
         return len(s_a) - 1
 
-    mn = 0
-    mx = len(s_a) - 1
-    mid = (mn + mx) // 2
-    while mn < mx:
+    first = 0
+    last = len(s_a) - 1
+    mid = (first + last) // 2
+    while first < last:
         if i == s_a[mid]:
             return mid
         elif i < s_a[mid]:
-            mx = mid - 1
-        elif i > s_a[mid]:
-            mn = mid + 1
-        mid = (mn + (mx-mn)) // 2
+            last = mid - 1
+        else:
+            i > s_a[mid]
+        first = mid + 1
+        mid = (first + (last - first)) // 2
     return mid
 
 
@@ -43,5 +44,5 @@ def bin_index(s_a, i):
 if __name__ == '__main__':
     arr = [5, 4, 3, 2, 1]
     arr_sorted = list_sort(arr)
-    ind = 3
+    ind = 4
     print(bin_index(arr_sorted, ind))
