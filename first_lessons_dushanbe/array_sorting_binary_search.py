@@ -29,7 +29,7 @@ def bin_index(s_a, i):
 
 
 if __name__ == '__main__':
-    arr = [-4, 6, 3, 7, 22, 1, 1, 1, -1]
+    arr = [-4, 6, 3, 7, 22, 1, -1]
     arr_sorted = list_sort(arr)
     print(arr_sorted)
     ind = 1
