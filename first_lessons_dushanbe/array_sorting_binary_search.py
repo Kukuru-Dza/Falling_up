@@ -28,8 +28,8 @@ def bin_index(s_a, i):
 
 
 if __name__ == '__main__':
-    arr = [5, 4, 3, 3, 3, 3, 2, 1]
+    arr = [3, 2, 1, 4, 6, 8]
     arr_sorted = list_sort(arr)
     print(arr_sorted)
-    ind = 3
+    ind = 4
     print(bin_index(arr_sorted, ind))
