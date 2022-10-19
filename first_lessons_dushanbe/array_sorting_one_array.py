@@ -6,7 +6,7 @@ def list_sort(a):
     if a is None:
         return a
     count = 0
-    while count < len(a)-1:
+    while count < len(a) - 1:
         count1 = count
         min_val = a[count1]
         while count1 < (len(a) - 1):
@@ -21,5 +21,5 @@ def list_sort(a):
 
 
 if __name__ == '__main__':
-    arr = [6, 1, 5, 7, 9, 3, -1]
+    arr = [5, 4, 3, 2, 1]
     print(list_sort(arr))
