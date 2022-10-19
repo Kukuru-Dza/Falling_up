@@ -2,17 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
-def list_sort(a):
-    if a is None:
-        return a
-    count = len(a)-1
-    while count >= 1:
-        ln = 0
-        for ln in range(count):
-            if a[ln] > a[ln+1]:
-                (a[ln], a[ln + 1]) = (a[ln + 1], a[ln])
-        count -= 1
-    return a
+from array_sorting_bubbles import list_sort
 
 
 def bin_index(s_a, i):
@@ -44,5 +34,6 @@ def bin_index(s_a, i):
 if __name__ == '__main__':
     arr = [5, 4, 3, 2, 1]
     arr_sorted = list_sort(arr)
+    print(arr_sorted)
     ind = 4
     print(bin_index(arr_sorted, ind))
