@@ -16,21 +16,20 @@ def bin_index(s_a, i):
         return first
     elif i == s_a[last]:
         return last
+
     while first < last:
         mid = (first + last) // 2
-        if i == s_a[mid]:
-            return mid
-        elif i < s_a[mid]:
+        if i < s_a[mid]:
             last = mid
+        elif i == s_a[mid]:
+            return mid
         elif i > s_a[mid]:
             first = mid
 
 
-
-
 if __name__ == '__main__':
-    arr = [-4, 6, 3, 7, 22, 1, -1]
+    arr = [5, 4, 3, 3, 3, 3, 2, 1]
     arr_sorted = list_sort(arr)
     print(arr_sorted)
-    ind = 1
+    ind = 3
     print(bin_index(arr_sorted, ind))
