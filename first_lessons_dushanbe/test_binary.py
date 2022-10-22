@@ -2,22 +2,55 @@
 # -*- coding: utf-8 -*-
 from unittest import TestCase
 from array_sorting_binary_search import bin_index
-from array_sorting_bubbles import list_sort
-
-
-# NOT READY  YET!!!!!!!!!!!!!!!
 
 
 class ArrayTest(TestCase):
 
-    def test_list_correct(self):
-        a = [-4, 6, 3, 7, 22, 1, 1, 1, -1]
-        expected = [-4, -1, 1, 1, 1, 3, 6, 7, 22]
-        got = list_sort(a)
+    def test_search_correct_odd(self):
+        a = [1, 2, 3, 4, 8, 17, 22]
+        b = 4
+        expected = 3
+        got = bin_index(a, b)
         self.assertEqual(got, expected, f'function should return index ({expected}) but got {got}')
 
-    def test_list_none(self):
+    def test_search_correct_even(self):
+        a = [1, 2, 3, 4, 8, 17]
+        b = 4
+        expected = 3
+        got = bin_index(a, b)
+        self.assertEqual(got, expected, f'function should return index ({expected}) but got {got}')
+
+    def test_search_not_in_list(self):
+        a = [1, 2, 3, 4, 8, 17, 22]
+        b = 5
+        expected = -1
+        got = bin_index(a, b)
+        self.assertEqual(got, expected, f'function should return index ({expected}) but got {got}')
+
+    def test_search_less_than_min(self):
+        a = [1, 2, 3, 4, 8, 17, 22]
+        b = 0
+        expected = -1
+        got = bin_index(a, b)
+        self.assertEqual(got, expected, f'function should return index ({expected}) but got {got}')
+
+    def test_search_more_than_max(self):
+        a = [1, 2, 3, 4, 8, 17, 22]
+        b = 23
+        expected = -1
+        got = bin_index(a, b)
+        self.assertEqual(got, expected, f'function should return index ({expected}) but got {got}')
+
+    def test_search_a_none(self):
         a = None
-        expected = a
-        got = list_sort(a)
+        b = 4
+        expected = -1
+        got = bin_index(a, b)
+        self.assertEqual(got, expected, f'function should return index ({expected}) but got {got}')
+
+    def test_search_b_none(self):
+        a = [1, 2, 3, 4, 8, 17, 22]
+        b = None
+        expected = -1
+        got = bin_index(a, b)
         self.assertEqual(got, expected, f'function should return index ({expected}) but got {got}')
