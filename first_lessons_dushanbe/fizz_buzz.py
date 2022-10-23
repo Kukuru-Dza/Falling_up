@@ -5,18 +5,26 @@
 #Если число делится без остатка и на 3, и на 5, то вместо числа выводится слово FizzBuzz
 #В остальных случаях в строку добавляется само число
 def fizz_buzz(a, b):
+    out_str = []
     if a > b or a is None or b is None:
         return ''
     for i in range(a, b+1):
         if i % 3 == 0 and i % 5 == 0:
-            print('FizzBuzz', end=' ')
+            out_str.append('FizzBuzz')
         elif i % 3 == 0 and i % 5 != 0:
-            print('Fizz', end=' ')
+            out_str.append('Fizz')
         elif i % 3 != 0 and i % 5 == 0:
-            print('Buzz', end=' ')
+            out_str.append('Buzz')
         else:
-            print(i, end=' ')
+            out_str.append(i)
+    return out_str
 
 
 if __name__ == '__main__':
-    print(fizz_buzz(1, 6))
+    start = 1
+    end = 10
+    x = fizz_buzz(start, end)
+    print(x)
+    for a in range(start-1, end-1):
+        print(x[a], end=' ')
+    print(x[end-1])
