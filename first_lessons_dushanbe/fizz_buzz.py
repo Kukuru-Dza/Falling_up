@@ -22,10 +22,8 @@ def fizz_buzz(a, b):
 
 if __name__ == '__main__':
     start = 2
-    end = 1
+    end = 22
     x = fizz_buzz(start, end)
     print(x)
-    if x != '':
-        for a in range(start-1, end-1):
-            print(x[a], end=' ')
-        print(x[end-1])
+    for i in x:
+        print(i, end=' ')
