@@ -11,8 +11,8 @@ if __name__ == "__main__":
                 for four in word:
                     for five in word:
                         for six in word:
-                            res = (one+two+three+four+five+six)
+                            res = (one + two + three + four + five + six)
                             if res[0] in 'pmkn' and res[-1] in 'pmkn':
-                                if res.count('u')+res.count('i') ==2:
+                                if res.count('u') + res.count('i') == 2:
                                     count += 1
     print(count)
