@@ -11,5 +11,6 @@ def reverse(a):
     return reversed_string
 
 
+if __name__ == "__main__":
     string_to_reverse = input(str('Enter a string to be reversed: '))
     print(reverse(string_to_reverse))
