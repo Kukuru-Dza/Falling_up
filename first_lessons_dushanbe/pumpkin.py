@@ -13,6 +13,6 @@ if __name__ == "__main__":
                         for six in word:
                             res = (one+two+three+four+five+six)
                             if res[0] in 'pmkn' and res[-1] in 'pmkn':
-                                if res.count('u')+res.count('i'):
+                                if res.count('u')+res.count('i') ==2:
                                     count += 1
     print(count)
