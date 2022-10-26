@@ -14,4 +14,5 @@ d = {
     2: 'two',
     3: 'three'
 }
-print(d, type(d))
+d1 = dict(four=4, five=5, six=6) #только для ключей-строк
+
