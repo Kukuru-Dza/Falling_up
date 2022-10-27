@@ -3,9 +3,9 @@
 
 
 def pascal_tr(b):
-    a = []
-    for i in range(b + 1):
-        a.append([1] + [0] * b)
+    a = [[1] + [0] * b for i in range(b + 1)]
+    # for i in range(b + 1):
+    #     a.append([1] + [0] * b)
 
     for i in range(1, (b + 1)):
         for j in range(1, (i + 1)):
@@ -14,5 +14,5 @@ def pascal_tr(b):
 
 
 if __name__ == '__main__':
-    a = 10
+    a = 5
     print(pascal_tr(a))

@@ -2,9 +2,10 @@
 # -*- coding: utf-8 -*-
 
 if __name__ == '__main__':
-    a = []
-    for i in range(3):
-        a.append([0] * 3)
+    a = [[0] * 3 for i in range(3)]
+    # a = []
+    # for i in range(3):
+    #     a.append([0] * 3)
     print(a)
     for i in range(3):
         for j in range(3):
