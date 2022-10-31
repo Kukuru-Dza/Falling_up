@@ -27,5 +27,5 @@ def fn_index(a, b):
 if __name__ == '__main__':
     print(fn_index([1, 3, 'abc', 9], 'abc'))
     print(fn_count([1, 3, 'abc', 9], 'abc'))
-    print(fn_index([1, 3, None, 5] , None))
-    print(fn_count([1, 3, None, 5] , None))
+    print(fn_index([1, 3, None, 5], None))
+    print(fn_count([1, 3, None, 5], None))

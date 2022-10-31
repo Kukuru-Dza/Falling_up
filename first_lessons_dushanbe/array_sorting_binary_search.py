@@ -17,8 +17,9 @@ def bin_index(s_a, i):
         return first
     elif i == s_a[last]:
         return last
-
-    while first < last:
+    first += 1
+    last -= 1
+    while first <= last:
         mid = (first + last) // 2
         if i < s_a[mid]:
             last = mid
