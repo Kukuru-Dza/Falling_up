@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
-from array_sorting_bubbles import list_sort
+from first_lessons_dushanbe.sortings.array_sorting_bubbles import list_sort
 
 
 def bin_index(s_a, i):

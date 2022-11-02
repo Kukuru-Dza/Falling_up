@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from unittest import TestCase
-from array_sorting import *
+from first_lessons_dushanbe.sortings.array_sorting import *
 
 
 class ArrayTest(TestCase):

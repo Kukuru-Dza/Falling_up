@@ -15,7 +15,6 @@ def rec_str_recurs(a):
         return a[0] + '(' + rec_str_recurs(a[1:-1]) + ')' + a[-1]
 
 
-
 if __name__ == '__main__':
     st = input('Enter: ')
     st1 = list(st)

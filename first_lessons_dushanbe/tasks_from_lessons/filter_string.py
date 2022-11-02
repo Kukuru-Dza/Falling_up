@@ -33,5 +33,5 @@ def filter_string(a, b):
 
 if __name__ == '__main__':
     text = '       If I look forward I win       '
-    print(filter_string(text, 'i') + '!')  # 'f  look forward  wn'
-    print(filter_string(text, 'O') + '!')  # 'If I lk frward I win
+    print(filter_string(text, 'i'))  # 'f  look forward  wn'
+    print(filter_string(text, 'O'))  # 'If I lk frward I win
