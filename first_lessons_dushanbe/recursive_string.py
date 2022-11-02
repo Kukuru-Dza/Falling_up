@@ -7,6 +7,7 @@ def rec_str(a):
         a[-1 - i] = a[-1 - i].replace(a[-1 - i], ')' + a[-1 - i])
     return a
 
+
 def rec_str_recurs(a):
     if len(a) == 1 or len(a) == 2:
         return a
