@@ -10,4 +10,6 @@ if __name__ == '__main__':
             a[i][j] = (i + 1) * (j + 1)
 
     for i in range(10):
-        print(a[i])
+        for j in range(10):
+            print("{:3d}".format(a[i][j]), end=' ')
+        print()
