@@ -6,13 +6,15 @@ if __name__ == '__main__':
     # a = []
     # for i in range(3):
     #     a.append([0] * 3)
-    print(a)
+    for i in range(3):
+        print(a[i])
     for i in range(3):
         for j in range(3):
             if i == j:
-                a[i][j] = 10
+                a[i][j] = 5
             elif i < j:
                 a[i][j] = 3
             else:
-                a[i][j] = 5
-    print(a)
+                a[i][j] = 10
+    for i in range(3):
+        print(a[i])
