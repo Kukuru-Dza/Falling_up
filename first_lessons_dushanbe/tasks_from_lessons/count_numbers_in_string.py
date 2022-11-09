@@ -21,7 +21,10 @@ if __name__ == '__main__':
     y = count(dig_list)
     for i in range(10):
         if y[i] > 0:
-            print(i, ':', y[i])
+            print(i, ':', y[i], end='; ')
+    print()
+    print(dict(enumerate(y)))
+    print(list(enumerate(y)))
     up_zero = lambda x: x > 0
     print(list(filter(up_zero, y)))
 
