@@ -22,4 +22,7 @@ if __name__ == '__main__':
     for i in range(10):
         if y[i] > 0:
             print(i, ':', y[i])
+    up_zero = lambda x: x > 0
+    print(list(filter(up_zero, y)))
+
 
