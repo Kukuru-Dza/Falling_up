@@ -23,8 +23,8 @@ if __name__ == '__main__':
         if y[i] > 0:
             print(i, ':', y[i], end='; ')
     print()
-    print(dict(enumerate(y)))
-    print(list(enumerate(y)))
+    print(dict(enumerate(y))) #Словарь
+    print(list(enumerate(y))) #Список
     up_zero = lambda x: x > 0
     print(list(filter(up_zero, y)))
 
