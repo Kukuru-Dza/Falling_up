@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 
 def reverse(a):
-    string_lenght = len(a)
+    string_len = len(a)
     remaining_operation = 0
     reversed_string = ''
-    while remaining_operation < string_lenght:
+    while remaining_operation < string_len:
         reversed_string = reversed_string + a[(-1 - remaining_operation)]
         remaining_operation = remaining_operation + 1
     return reversed_string

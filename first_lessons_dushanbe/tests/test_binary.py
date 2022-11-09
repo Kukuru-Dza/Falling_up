@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from unittest import TestCase
-from array_sorting_binary_search import bin_index
+from binary_search import bin_index
 
 
 class ArrayTest(TestCase):
