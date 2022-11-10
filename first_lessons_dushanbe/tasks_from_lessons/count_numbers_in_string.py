@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 ''' написать функцию подсчета количества каждой цифры в произвольной строке'''
+'''дабовил метод фильр'''
 
 
 def count(x):
-    b = list(x)
-    dig_list = []
-    for i in range(len(b)):
-        if b[i].isdigit():
-            dig_list.append(b[i])
+    dig_list = list(filter(str.isdigit, x))
+    # b = list(x)
+    # dig_list = []
+    # for i in range(len(b)):
+    #     if b[i].isdigit():
+    #         dig_list.append(b[i])
     res = [0 for _ in range(10)]
     for k in range(len(dig_list)):
         el = int(dig_list[k])
