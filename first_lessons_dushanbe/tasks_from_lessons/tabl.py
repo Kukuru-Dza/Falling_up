@@ -4,12 +4,14 @@
 '''просто тренировочная таблица умножения на генераторы списков'''
 
 if __name__ == '__main__':
-    a = [[0] * 20 for i in range(20)]
-    for i in range(20):
-        for j in range(20):
+    b = 10
+    a = [[0]*b for _ in range(b)]
+    for i in range(b):
+        for j in range(b):
             a[i][j] = (i + 1) * (j + 1)
-
-    for i in range(20):
-        for j in range(20):
             print("{:4d}".format(a[i][j]), end=' ')
         print()
+    # for i in range(b):
+    #     for j in range(b):
+    #         print("{:4d}".format(a[i][j]), end=' ')
+    #     print()
